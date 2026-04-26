@@ -21,7 +21,7 @@ services:
     volumes:
       - ./db-refugio:/var/lib/mysql
     ports:
-      - "3011:3002"
+      - "3310:3306"
   phpmyadmin:
     image: phpmyadmin/phpmyadmin:latest
     container_name: phpmyadmin-refugio
