@@ -24,14 +24,14 @@ services:
       - "3010:3002"
   phpmyadmin:
     image: phpmyadmin/phpmyadmin:latest
-    container_name: phpmyadmin-examen
+    container_name: phpmyadmin-refugio
     restart: always
     depends_on:
       - db
     environment:
       PMA_HOST: db
-      PMA_USER: examen
-      PMA_PASSWORD: examen123
+      PMA_USER: cuidador
+      PMA_PASSWORD: animales123
     ports:
       - "8093:80"
   browsersync:
